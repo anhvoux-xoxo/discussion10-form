@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Page */
+body {
+  background-color: #eef2f7;
+  padding: 40px;
+}
+
+/* Form container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Fieldset (main card) */
+fieldset {
+  background: #ffffff;
+  border: none;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Legend (title) */
+legend {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Each question block */
+.question {
+  margin-bottom: 25px;
+  padding: 12px 0;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+/* Required indicator */
+label::after {
+  content: " *";
+  color: red;
+  font-weight: normal;
+  margin-left: 2px;
+}
+
+/* Inputs + select + textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Focus state (accessibility for aXe/Wave) */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #4a6cf7;
+  border-color: #4a6cf7;
+}
+
+/* Radio groups */
+.radio-group {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Radio options layout */
+.radio-group input[type="radio"] {
+  margin-right: 6px;
+  margin-top: 8px;
+}
+
+.radio-group label {
+  display: inline;
+  margin-right: 15px;
+  font-weight: normal;
+  color: #444;
+}
+
+/* Submit button */
+input[type="submit"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a6cf7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Hover */
+input[type="submit"]:hover,
+button:hover {
+  background-color: #3a56c5;
+}
+
+/* Improve spacing between sections */
+fieldset > *:not(:last-child) {
+  margin-bottom: 15px;
+}
